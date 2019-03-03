@@ -4,6 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: { server: './server.ts' },
   resolve: { extensions: ['.js', '.ts'] },
+  target: 'node',
   mode: 'none',
   // これはnode_modulesや他のサードパーティーライブラリを確実に読み込みます
   externals: [/node_modules/],
